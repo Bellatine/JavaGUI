@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.caculator.CalculatorController"
+          prefHeight="250" prefWidth="300"
+          alignment="center" hgap="10" vgap="10">
+    <Text text="First Number" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+    <TextField id = "firstNum" fx:id="firstNum" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Text text="Second Number" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField id = "secondNum" fx:id="secondNum" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Text text="Result" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label id = "result" fx:id="result" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button id = "addition" text="+" onAction="#handleButtonAction" fx:id="addition" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Button id = "subtraction" text="-" onAction="#handleButtonAction" fx:id="subtraction" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Button id = "multiplication" text="*" onAction="#handleButtonAction" fx:id="multiplication" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Button id = "division" text="/" onAction="#handleButtonAction" fx:id="division" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Button id = "mod" text="\%" onAction="#handleButtonAction" fx:id="mod" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Button id = "clear" text="Clear" onAction="#handleClearAction" fx:id="clear" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+</GridPane>
